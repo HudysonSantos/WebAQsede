@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebAQsede.Models;
 
 namespace WebAQsede
 {
@@ -25,7 +26,8 @@ namespace WebAQsede
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<Contexto>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("WebAQsede")));
+                options.UseSqlServer(Configuration.GetConnectionString("WebAQsede")));
+
             services.AddControllersWithViews();
         }
 
