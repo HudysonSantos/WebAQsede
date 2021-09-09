@@ -1,13 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace WebAQsede.Models.Dominio
 {
+    [Table("Cliente")]
     public class Cliente
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DisplayName("ID")]
         public int Id { get; set; }
+
+        [StringLength(35)]
+        [DisplayName("Nome")]
+        [Required(ErrorMessage = "Campo nome do cliente é obrigatório")]
         public String Nome { get; set; }
         public int CPF { get; set; }
         public String DataNascimento { get; set; }
