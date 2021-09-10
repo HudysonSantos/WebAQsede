@@ -27,7 +27,6 @@ namespace WebAQsede
         {
             services.AddDbContext<Contexto>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("WebAQsede")));
-
             services.AddControllersWithViews();
         }
 

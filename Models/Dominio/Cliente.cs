@@ -21,43 +21,43 @@ namespace WebAQsede.Models.Dominio
         [StringLength(35, ErrorMessage = "Não aceita Nome com mais de 35 dígitos")]
         [DisplayName("Nome")]
         [Required(ErrorMessage = "Campo nome do cliente é obrigatório")]
-        public String Nome { get; set; }
+        public string Nome { get; set; }
 
         [StringLength(14, ErrorMessage = "Não aceita CPF com mais de 14 dígitos")]
         [DisplayName("CPF")]
         [Required(ErrorMessage = "Campo CPF do cliente é obrigatório")]
         [Remote("ValidarCPF", "Clientes", ErrorMessage = "CPF Inválido!!!")]
-        public String CPF { get; set; }
+        public string CPF { get; set; }
 
         [StringLength(10, ErrorMessage = "DD/MM/AAAA")]
         [DisplayName("Data de Nascimento")]
         [Required(ErrorMessage = "Campo nome do cliente é obrigatório")]
         [Remote("ValidarData", "Clientes", ErrorMessage = "Data Inválida!!!")]
-        public String DataNascimento { get; set; }
+        public string DataNascimento { get; set; }
 
         [StringLength(35, ErrorMessage = "Não aceita Email com mais de 35 dígitos")]
         [DisplayName("Email")]
         [Required(ErrorMessage = "Campo Email do cliente é obrigatório")]
-        public String email { get; set; }
+        public string email { get; set; }
 
         [StringLength(10, ErrorMessage = "Não aceita CEP com mais de 10 dígitos")]
         [DisplayName("CEP")]
         [Required(ErrorMessage = "Campo CEP do cliente é obrigatório")]
-        public String CEP { get; set; }
+        public string CEP { get; set; }
 
         [StringLength(35, ErrorMessage = "Não aceita cidade com mais de 35 dígitos")]
         [DisplayName("Cidade")]
         [Required(ErrorMessage = "Campo Cidade do cliente é obrigatório")]
-        public String Cidade { get; set; }
+        public string Cidade { get; set; }
 
         [StringLength(35, ErrorMessage = "Não aceita endereço com mais de 35 dígitos")]
         [DisplayName("Endereço")]
         [Required(ErrorMessage = "Campo endereço do cliente é obrigatório")]
-        public String Endereco { get; set; }
+        public string Endereco { get; set; }
 
         [StringLength(14, ErrorMessage = "Não aceita Nome com mais de 14 dígitos")]
         [DisplayName("Telefone")]
         [Required(ErrorMessage = "Campo telefone do cliente é obrigatório")]
-        public String Telefone { get; set; }
+        public string Telefone { get; set; }
     }
 }

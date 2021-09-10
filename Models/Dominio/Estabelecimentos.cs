@@ -20,37 +20,37 @@ namespace WebAQsede.Models.Dominio
         [StringLength(35, ErrorMessage = "Não aceita Nome com mais de 35 dígitos")]
         [DisplayName("Nome")]
         [Required(ErrorMessage = "Campo nome do estabelecimento é obrigatório")]
-        public String Nome { get; set; }
+        public string Nome { get; set; }
 
         [StringLength(18, ErrorMessage = "Não aceita CNPJ com mais de 18 dígitos")]
         [DisplayName("CNPJ")]
         [Required(ErrorMessage = "Campo CPF do estabelecimento é obrigatório")]
         [Remote("ValidarCNPJ", "Estabelecimento", ErrorMessage = "CNPJ Inválido!!!")]
-        public String CNPJ { get; set; }
+        public string CNPJ { get; set; }
 
         [StringLength(35, ErrorMessage = "Não aceita Email com mais de 35 dígitos")]
         [DisplayName("Email")]
         [Required(ErrorMessage = "Campo Email do estabelecimento é obrigatório")]
-        public String Email { get; set; }
+        public string Email { get; set; }
 
         [StringLength(10, ErrorMessage = "Não aceita CEP com mais de 10 dígitos")]
         [DisplayName("CEP")]
         [Required(ErrorMessage = "Campo CEP do estabelecimento é obrigatório")]
-        public int CEP { get; set; }
+        public string CEP { get; set; }
 
         [StringLength(35, ErrorMessage = "Não aceita cidade com mais de 35 dígitos")]
         [DisplayName("Cidade")]
         [Required(ErrorMessage = "Campo Cidade do estabelecimento é obrigatório")]
-        public String Cidade { get; set; }
+        public string Cidade { get; set; }
 
         [StringLength(14, ErrorMessage = "Não aceita Nome com mais de 14 dígitos")]
         [DisplayName("Telefone")]
         [Required(ErrorMessage = "Campo telefone do estabelecimento é obrigatório")]
-        public int Telefone { get; set; }
+        public string Telefone { get; set; }
 
         [StringLength(35, ErrorMessage = "Não aceita endereço com mais de 35 dígitos")]
         [DisplayName("Endereço")]
         [Required(ErrorMessage = "Campo endereço do estabelecimento é obrigatório")]
-        public String Endereco { get; set; }
+        public string Endereco { get; set; }
     }
 }
